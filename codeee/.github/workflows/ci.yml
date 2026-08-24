@@ -23,11 +23,11 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -r codeee/requirement.txt
 
     - name: Execute pytest across all modules
       # Adding current folder to PYTHONPATH lets pytest discover files in src/
       env:
-        PYTHONPATH: .
+        PYTHONPATH: codeee
       run: |
-        pytest -v tests/
+        pytest -v codeee/tests/
