@@ -27,6 +27,6 @@ jobs:
 
     - name: Execute pytest across all modules
       env:
-        PYTHONPATH: codeee
+        PYTHONPATH: ./codeee
       run: |
         pytest -v codeee/tests/
