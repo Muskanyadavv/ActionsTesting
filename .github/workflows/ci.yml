@@ -26,7 +26,6 @@ jobs:
         pip install -r codeee/requirement.txt
 
     - name: Execute pytest across all modules
-      # Adding current folder to PYTHONPATH lets pytest discover files in src/
       env:
         PYTHONPATH: codeee
       run: |
