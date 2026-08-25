@@ -8,6 +8,3 @@ def capitalize_words(text: str) -> str:
     if not text:
         return ""
     return text.title()
-
-# def reverse_text(text: str) -> str:
-#     return text  # Bug: omitted [::-1] reversal logic
