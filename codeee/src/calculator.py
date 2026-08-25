@@ -9,5 +9,5 @@ def divide(a: float, b: float) -> float:
         raise ValueError("Cannot divide by zero.")
     return a / b
 
-def multiply(a: float, b: float) -> float:
-    return a * b  # Bug: changed * to +
+# def multiply(a: float, b: float) -> float:
+#     return a * b  # Bug: changed * to +
