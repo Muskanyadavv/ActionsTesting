@@ -10,4 +10,4 @@ def divide(a: float, b: float) -> float:
     return a / b
 
 def multiply(a: float, b: float) -> float:
-    return a + b  # Bug: changed * to +
+    return a * b  # Bug: changed * to +
