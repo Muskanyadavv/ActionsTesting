@@ -30,12 +30,12 @@ jobs:
     # 4. Build the local Docker image for testing
     - name: Build Docker Image for Testing
       run: |
-        docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/my-python-app:${{ github.sha }} .
+        docker build -t my-python-app:${{ github.sha }} .
 
     # 5. Run tests inside the built container
     - name: Run Pytest inside Container
       run: |
-        docker run --rm ${{ secrets.DOCKERHUB_USERNAME }}/my-python-app:${{ github.sha }}
+        docker run --rm my-python-app:${{ github.sha }}
 
     # 6. Push image to Docker Hub (ONLY executes if step 5 passes)
     - name: Build and Push Docker Image to Registry
